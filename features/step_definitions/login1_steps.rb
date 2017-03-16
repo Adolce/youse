@@ -1,12 +1,5 @@
 # encoding: utf-8
-require 'rspec'
-require 'gherkin'
-require 'cucumber'
-require 'site_prism'
-require 'capybara'
-require 'syntax'
-require 'rubygems'
-require 'selenium-webdriver'
+
 
 ##### Dado #####
 Dado (/^que eu esteja na home da Yousee e vou ate minha conta$/) do

@@ -1,13 +1,5 @@
 # encoding: utf-8
-require 'rubygems'
-require 'selenium-webdriver'
-require 'rspec'
-require 'gherkin'
-require 'cucumber'
-require 'site_prism'
-require 'capybara'
-require 'syntax'
-require 'rescue'
+require_relative "youse_test/features/specifications"
 
 ##### Dado #####
 Dado (/^que eu esteja na home da Youse e vou ate minha conta$/) do

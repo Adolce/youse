@@ -1,3 +1,4 @@
+
 require 'rubygems'
 require 'selenium-webdriver'
 require 'rspec'
@@ -5,23 +6,20 @@ require 'capybara'
 require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'site_prism'
-require 'rspec'
 require 'yaml'
 require 'capybara/poltergeist'
+require 'gherkin'
+require 'bundler'
 
-require_relative "../../youse_test"
- 
- 
-World do
-  Capybara.app = MyApp
- 
-  include Capybara::DSL
-  include RSpec::Matchers
-end
 Capybara.default_driver = :selenium
+Capybara.default_wait_time = 20
+Capybara.javascript_driver = :webkit
+
 
 BROWSER = ENV['BROWSER']
 ENVIRONMENT_TYPE = ENV['ENVIRONMENT_TYPE']
+
+
 
 Capybara.register_driver :selenium do |app|
   if BROWSER.eql?('chrome')
