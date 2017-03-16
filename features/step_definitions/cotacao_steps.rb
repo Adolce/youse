@@ -126,9 +126,9 @@ Quando (/^eu habilitar a opção serviço de historico veicular$/) do
 end
 
 Quando(/^eu preencher o campo "([^"]*)" de forma completa $/) do|auto_order_flow_insured_person_data_insured_person_attributes_name'|
-    click_on(:id, "auto_order_flow_insured_person_data_insured_person_attributes_name'").click
-    click_on(:id, "auto_order_flow_insured_person_data_insured_person_attributes_name'").clear
-    auto_page.type_auto_order_flow_insured_person_data_insured_person_attributes_name'(auto_order_flow_insured_person_data_insured_person_attributes_name')
+    click_on(:id, "auto_order_flow_insured_person_data_insured_person_attributes_name").click
+    click_on(:id, "auto_order_flow_insured_person_data_insured_person_attributes_name").clear
+    auto_page.type_auto_order_flow_insured_person_data_insured_person_attributes_name(auto_order_flow_insured_person_data_insured_person_attributes_name')
   end
 
 Quando(/^eu seleciono o pais em que nasci$/) do
@@ -157,7 +157,7 @@ Quando (/^eu seleciono a opção se é blindado ou não$/) do
     page.all(:xpath, "//select[@id='auto_order_flow_vehicle_data_vehicle_attributes_bullet_proof']//option[2]").click
   end  
 
-###### Then #####
+###### Entao #####
 
 Então(/^ eu devo selecionar para quem se destina o seguro$/) do 
    page.all(:xpath, "//*[@id='auto_order_flow_lead_person_data_insured_person_attributes_same_as_lead_person']//option[1]").selected?
